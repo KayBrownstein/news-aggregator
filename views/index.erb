@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Article Index</title>
+</head>
+
+  <body>
+    <h3><a href="/articles/new">Submit a form</a></h3>
+    <!-- <ul> -->
+      <% @articles.each do |article| %>
+        <!-- <li> -->
+          <ul>
+            <strong><%= article[0]%></strong>
+            <ul>
+            <li><a href="<%= article[1] %>" target="_blank"><%= article[1] %></a> </li>
+            <li><%= article[2] %> </li>
+        <!-- <li><%= article %></li> -->
+      </ul>
+      </ul>
+      <% end %>
+    <!-- </ul> -->
+
+  </body>
+</html>
